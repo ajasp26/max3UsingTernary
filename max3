@@ -1,0 +1,31 @@
+package max3;
+
+import static java.lang.Integer.max;
+import java.util.Scanner;
+import java.lang.Math;
+
+/**
+ *
+ * @author ajasp
+ */
+public class Max3 {
+
+    /**
+     * Takes user input for three integers and returns the greater of the three using ternary operator.
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Enter 3 numbers");
+        int x = input.nextInt();
+        int y = input.nextInt();
+        int z = input.nextInt();
+      
+        //is x greater than y? if true, is x great than z and if not, then z.
+        //if x is not greater than y, is y greater than z, if not, then z.
+        System.out.println((x > y) ? (x > z ? x : z) : (y > z ? y : z));
+        
+    }
+    
+}
